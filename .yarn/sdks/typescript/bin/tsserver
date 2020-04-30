@@ -2,4 +2,4 @@
 
 const {existsSync} = require(`fs`);
 const {createRequire} = require(`module`);
-const {resolv
+const {resolve} = require(`pat
