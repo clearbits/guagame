@@ -2,4 +2,6 @@
 
 const {existsSync} = require(`fs`);
 const {createRequire} = require(`module`);
-const {resolve} = require(`pat
+const {resolve} = require(`path`);
+
+const relPnpApiPath 
