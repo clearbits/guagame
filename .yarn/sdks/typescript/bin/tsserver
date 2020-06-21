@@ -10,4 +10,5 @@ const absPnpApiPath = resolve(__dirname, relPnpApiPath);
 const absRequire = createRequire(absPnpApiPath);
 
 if (existsSync(absPnpApiPath)) {
-  if (!pr
+  if (!process.versions.pnp) {
+    // S
