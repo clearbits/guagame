@@ -11,4 +11,4 @@ const absRequire = createRequire(absPnpApiPath);
 
 if (existsSync(absPnpApiPath)) {
   if (!process.versions.pnp) {
-    // Setup the environm
+    // Setup the environment to be able to re
