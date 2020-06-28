@@ -16,4 +16,4 @@ if (existsSync(absPnpApiPath)) {
   }
 }
 
-// Defer to the real ty
+// Defer to the real typescript/bin/ts
