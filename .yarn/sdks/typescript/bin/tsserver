@@ -16,4 +16,5 @@ if (existsSync(absPnpApiPath)) {
   }
 }
 
-// Defer to the real typescript/bin/tsserver your application us
+// Defer to the real typescript/bin/tsserver your application uses
+module.exports 
