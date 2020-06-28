@@ -12,4 +12,6 @@ const absRequire = createRequire(absPnpApiPath);
 if (existsSync(absPnpApiPath)) {
   if (!process.versions.pnp) {
     // Setup the environment to be able to require typescript/bin/tsserver
-    require(absPnpApi
+    require(absPnpApiPath).setup();
+  }
+}
