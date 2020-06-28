@@ -16,4 +16,4 @@ if (existsSync(absPnpApiPath)) {
   }
 }
 
-// Defer to the real typescript/bin/ts
+// Defer to the real typescript/bin/tsserver your application us
