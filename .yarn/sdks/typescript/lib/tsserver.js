@@ -40,3 +40,31 @@ const moduleWrapper = tsserver => {
       //
       // We only do this to modules owned by the the dependency tree roots.
       // This avoids breaking the resolution when jumping inside a vendor
+      // with peer dep (otherwise jumping into react-dom would show resolution
+      // errors on react).
+      //
+      const resolved = isVirtual(str) ? pnpApi.resolveVirtual(str) : str;
+      if (resolved) {
+        const locator = pnpApi.findPackageLocator(resolved);
+        if (locator && (dependencyTreeRoots.has(`${locator.name}@${locator.reference}`) || isPortal(locator.reference))) {
+          str = resolved;
+        }
+      }
+
+      str = normalize(str);
+
+      if (str.match(/\.zip\//)) {
+        switch (hostInfo) {
+          // Absolute VSCode `Uri.fsPath`s need to start with a slash.
+          // VSCode only adds it automatically for supported schemes,
+          // so we have to do it manually for the `zip` scheme.
+          // The path needs to start with a caret otherwise VSCode doesn't handle the protocol
+          //
+          // Ref: https://github.com/microsoft/vscode/issues/105014#issuecomment-686760910
+          //
+          // 2021-10-08: VSCode changed the format in 1.61.
+          // Before | ^zip:/c:/foo/bar.zip/package.json
+          // After  | ^/zip//c:/foo/bar.zip/package.json
+          //
+          // 2022-04-06: VSCode changed the format in 1.66.
+          // Before | ^/zip//c:/foo/bar.zip/package.json
