@@ -94,3 +94,27 @@ const moduleWrapper = tsserver => {
           // We have to resolve the actual file system path from virtual path
           // and convert scheme to supported by [vim-rzip](https://github.com/lbrayner/vim-rzip)
           case `coc-nvim`: {
+            str = normalize(resolved).replace(/\.zip\//, `.zip::`);
+            str = resolve(`zipfile:${str}`);
+          } break;
+
+          // Support neovim native LSP and [typescript-language-server](https://github.com/theia-ide/typescript-language-server)
+          // We have to resolve the actual file system path from virtual path,
+          // everything else is up to neovim
+          case `neovim`: {
+            str = normalize(resolved).replace(/\.zip\//, `.zip::`);
+            str = `zipfile://${str}`;
+          } break;
+
+          default: {
+            str = `zip:${str}`;
+          } break;
+        }
+      }
+    }
+
+    return str;
+  }
+
+  function fromEditorPath(str) {
+    switch (hostInfo) {
