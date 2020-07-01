@@ -68,3 +68,29 @@ const moduleWrapper = tsserver => {
           //
           // 2022-04-06: VSCode changed the format in 1.66.
           // Before | ^/zip//c:/foo/bar.zip/package.json
+          // After  | ^/zip/c:/foo/bar.zip/package.json
+          //
+          // 2022-05-06: VSCode changed the format in 1.68
+          // Before | ^/zip/c:/foo/bar.zip/package.json
+          // After  | ^/zip//c:/foo/bar.zip/package.json
+          //
+          case `vscode <1.61`: {
+            str = `^zip:${str}`;
+          } break;
+
+          case `vscode <1.66`: {
+            str = `^/zip/${str}`;
+          } break;
+
+          case `vscode <1.68`: {
+            str = `^/zip${str}`;
+          } break;
+
+          case `vscode`: {
+            str = `^/zip/${str}`;
+          } break;
+
+          // To make "go to definition" work,
+          // We have to resolve the actual file system path from virtual path
+          // and convert scheme to supported by [vim-rzip](https://github.com/lbrayner/vim-rzip)
+          case `coc-nvim`: {
