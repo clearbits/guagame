@@ -154,3 +154,18 @@ const moduleWrapper = tsserver => {
     this.projectService.allowLocalPluginLoads = true;
     return originalEnablePluginsWithOptions.apply(this, arguments);
   };
+
+  // And here is the point where we hijack the VSCode <-> TS communications
+  // by adding ourselves in the middle. We locate everything that looks
+  // like an absolute path of ours and normalize it.
+
+  const Session = tsserver.server.Session;
+  const {onMessage: originalOnMessage, send: originalSend} = Session.prototype;
+  let hostInfo = `unknown`;
+
+  Object.assign(Session.prototype, {
+    onMessage(/** @type {string | object} */ message) {
+      const isStringMessage = typeof message === 'string';
+      const parsedMessage = isStringMessage ? JSON.parse(message) : message;
+
+      if (
