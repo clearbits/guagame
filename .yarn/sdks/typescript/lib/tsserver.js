@@ -169,3 +169,25 @@ const moduleWrapper = tsserver => {
       const parsedMessage = isStringMessage ? JSON.parse(message) : message;
 
       if (
+        parsedMessage != null &&
+        typeof parsedMessage === `object` &&
+        parsedMessage.arguments &&
+        typeof parsedMessage.arguments.hostInfo === `string`
+      ) {
+        hostInfo = parsedMessage.arguments.hostInfo;
+        if (hostInfo === `vscode` && process.env.VSCODE_IPC_HOOK) {
+          const [, major, minor] = (process.env.VSCODE_IPC_HOOK.match(
+            // The RegExp from https://semver.org/ but without the caret at the start
+            /(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/
+          ) ?? []).map(Number)
+
+          if (major === 1) {
+            if (minor < 61) {
+              hostInfo += ` <1.61`;
+            } else if (minor < 66) {
+              hostInfo += ` <1.66`;
+            } else if (minor < 68) {
+              hostInfo += ` <1.68`;
+            }
+          }
+        }
