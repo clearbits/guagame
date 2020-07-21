@@ -191,3 +191,23 @@ const moduleWrapper = tsserver => {
             }
           }
         }
+      }
+
+      const processedMessageJSON = JSON.stringify(parsedMessage, (key, value) => {
+        return typeof value === 'string' ? fromEditorPath(value) : value;
+      });
+
+      return originalOnMessage.call(
+        this,
+        isStringMessage ? processedMessageJSON : JSON.parse(processedMessageJSON)
+      );
+    },
+
+    send(/** @type {any} */ msg) {
+      return originalSend.call(this, JSON.parse(JSON.stringify(msg, (key, value) => {
+        return typeof value === `string` ? toEditorPath(value) : value;
+      })));
+    }
+  });
+
+  return tsserver;
