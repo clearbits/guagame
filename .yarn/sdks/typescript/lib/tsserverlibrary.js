@@ -59,3 +59,25 @@ const moduleWrapper = tsserver => {
           // VSCode only adds it automatically for supported schemes,
           // so we have to do it manually for the `zip` scheme.
           // The path needs to start with a caret otherwise VSCode doesn't handle the protocol
+          //
+          // Ref: https://github.com/microsoft/vscode/issues/105014#issuecomment-686760910
+          //
+          // 2021-10-08: VSCode changed the format in 1.61.
+          // Before | ^zip:/c:/foo/bar.zip/package.json
+          // After  | ^/zip//c:/foo/bar.zip/package.json
+          //
+          // 2022-04-06: VSCode changed the format in 1.66.
+          // Before | ^/zip//c:/foo/bar.zip/package.json
+          // After  | ^/zip/c:/foo/bar.zip/package.json
+          //
+          // 2022-05-06: VSCode changed the format in 1.68
+          // Before | ^/zip/c:/foo/bar.zip/package.json
+          // After  | ^/zip//c:/foo/bar.zip/package.json
+          //
+          case `vscode <1.61`: {
+            str = `^zip:${str}`;
+          } break;
+
+          case `vscode <1.66`: {
+            str = `^/zip/${str}`;
+          } break;
