@@ -81,3 +81,18 @@ const moduleWrapper = tsserver => {
           case `vscode <1.66`: {
             str = `^/zip/${str}`;
           } break;
+
+          case `vscode <1.68`: {
+            str = `^/zip${str}`;
+          } break;
+
+          case `vscode`: {
+            str = `^/zip/${str}`;
+          } break;
+
+          // To make "go to definition" work,
+          // We have to resolve the actual file system path from virtual path
+          // and convert scheme to supported by [vim-rzip](https://github.com/lbrayner/vim-rzip)
+          case `coc-nvim`: {
+            str = normalize(resolved).replace(/\.zip\//, `.zip::`);
+            str = resolve(`zipfile:${str}`);
