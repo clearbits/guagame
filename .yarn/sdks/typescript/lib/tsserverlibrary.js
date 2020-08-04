@@ -146,3 +146,29 @@ const moduleWrapper = tsserver => {
   // which doesn't work when using the global cache
   // https://github.com/microsoft/TypeScript/blob/1b57a0395e0bff191581c9606aab92832001de62/src/server/project.ts#L2238
   // VSCode doesn't want to enable 'allowLocalPluginLoads' due to security concerns but
+  // TypeScript already does local loads and if this code is running the user trusts the workspace
+  // https://github.com/microsoft/vscode/issues/45856
+  const ConfiguredProject = tsserver.server.ConfiguredProject;
+  const {enablePluginsWithOptions: originalEnablePluginsWithOptions} = ConfiguredProject.prototype;
+  ConfiguredProject.prototype.enablePluginsWithOptions = function() {
+    this.projectService.allowLocalPluginLoads = true;
+    return originalEnablePluginsWithOptions.apply(this, arguments);
+  };
+
+  // And here is the point where we hijack the VSCode <-> TS communications
+  // by adding ourselves in the middle. We locate everything that looks
+  // like an absolute path of ours and normalize it.
+
+  const Session = tsserver.server.Session;
+  const {onMessage: originalOnMessage, send: originalSend} = Session.prototype;
+  let hostInfo = `unknown`;
+
+  Object.assign(Session.prototype, {
+    onMessage(/** @type {string | object} */ message) {
+      const isStringMessage = typeof message === 'string';
+      const parsedMessage = isStringMessage ? JSON.parse(message) : message;
+
+      if (
+        parsedMessage != null &&
+        typeof parsedMessage === `object` &&
+        parsedMessage.arguments &&
