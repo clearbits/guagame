@@ -1,4 +1,4 @@
 {
   "name": "typescript",
   "version": "4.8.4-sdk",
-  "main"
+  "main": "./lib/typescript.js"
