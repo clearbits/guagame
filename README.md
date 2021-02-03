@@ -2,4 +2,4 @@
 
 [简体中文](README.zh.md)
 
-OhMyG
+OhMyGPT is a project that enable
