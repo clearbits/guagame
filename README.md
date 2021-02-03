@@ -2,4 +2,4 @@
 
 [简体中文](README.zh.md)
 
-OhMyGPT is a project that enable
+OhMyGPT is a project that enables you to deploy a Ch
