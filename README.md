@@ -4,4 +4,4 @@
 
 OhMyGPT is a project that enables you to deploy a ChatGPT-based web app within minutes, by just configuring some environment variables. You will get a web app similar to the demos found on https://polisher.vercel.app and https://ohmyzhen.vercel.app.
 
-To deploy your web app based on ChatGPT, you will require an API key from [OpenAI](https://platform.openai.com/account/api-keys) and an account in [Vercel](https://vercel.com). We plan to expand our support to include more cloud plat
+To deploy your web app based on ChatGPT, you will require an API key from [OpenAI](https://platform.openai.com/account/api-keys) and an account in [Vercel](https://vercel.com). We plan to expand our support to include more cloud platforms in the futu
