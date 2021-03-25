@@ -10,4 +10,4 @@ To deploy your web app based on ChatGPT, you will require an API key from [OpenA
 
 ## Get Started
 
-1
+1. Fork this repos
