@@ -12,4 +12,4 @@ To deploy your web app based on ChatGPT, you will require an API key from [OpenA
 
 1. Fork this repository to your own GitHub account.
 2. Log in to your [Vercel](https://vercel.com) console to create a new project from the forked repository. ( ℹ️ Don't click the Deploy button at this moment)
-3. [Setting up Environm
+3. [Setting up Environment Variables](#s
