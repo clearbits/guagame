@@ -16,4 +16,4 @@ To deploy your web app based on ChatGPT, you will require an API key from [OpenA
 4. Deploy your application and give Vercel a moment to complete the deployment process.
 5. Visit your web app in your web browser, and share it to your friends. 🥳
 
-##
+## Setting up Environment 
