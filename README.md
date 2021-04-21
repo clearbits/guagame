@@ -18,4 +18,4 @@ To deploy your web app based on ChatGPT, you will require an API key from [OpenA
 
 ## Setting up Environment Variables
 
-You can custom
+You can customize your application by usin
