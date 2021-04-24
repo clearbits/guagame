@@ -21,4 +21,6 @@ To deploy your web app based on ChatGPT, you will require an API key from [OpenA
 You can customize your application by using environment variables. Here are all available variables and the usages:
 
 ```env
-# Clie
+# Client side
+
+# The app
