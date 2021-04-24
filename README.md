@@ -24,4 +24,4 @@ You can customize your application by using environment variables. Here are all 
 # Client side
 
 # The app logo url.
-APP_LOGO="http
+APP_LOGO="https://avatars.githubuser
