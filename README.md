@@ -23,4 +23,5 @@ You can customize your application by using environment variables. Here are all 
 ```env
 # Client side
 
-# The app
+# The app logo url.
+APP_LOGO="http
