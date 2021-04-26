@@ -25,4 +25,5 @@ You can customize your application by using environment variables. Here are all 
 
 # The app logo url.
 APP_LOGO="https://avatars.githubusercontent.com/u/38027416?v=4"
-#
+# The name of the app.
+A
