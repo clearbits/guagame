@@ -27,4 +27,4 @@ You can customize your application by using environment variables. Here are all 
 APP_LOGO="https://avatars.githubusercontent.com/u/38027416?v=4"
 # The name of the app.
 APP_NAME="Oh My Polisher"
-# Summary your app
+# Summary your app's behavoir and sh
