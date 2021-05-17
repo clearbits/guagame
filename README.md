@@ -28,3 +28,4 @@ APP_LOGO="https://avatars.githubusercontent.com/u/38027416?v=4"
 # The name of the app.
 APP_NAME="Oh My Polisher"
 # Summary your app's behavoir and show the users how to use it.
+APP_SUMMARY="Correctin
