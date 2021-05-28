@@ -30,4 +30,4 @@ APP_NAME="Oh My Polisher"
 # Summary your app's behavoir and show the users how to use it.
 APP_SUMMARY="Correcting and polishing your text."
 # Example input that shows user how to use the app.
-EXAMPLE_INPUT="Hello
+EXAMPLE_INPUT="Hello there, im Nooc, it'
