@@ -31,3 +31,7 @@ APP_NAME="Oh My Polisher"
 APP_SUMMARY="Correcting and polishing your text."
 # Example input that shows user how to use the app.
 EXAMPLE_INPUT="Hello there, im Nooc, it's glad to see you."
+
+# Server side
+
+# Requi
