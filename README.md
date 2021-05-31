@@ -34,4 +34,4 @@ EXAMPLE_INPUT="Hello there, im Nooc, it's glad to see you."
 
 # Server side
 
-# Required, the API key got
+# Required, the API key got from OpenAI (
