@@ -36,4 +36,4 @@ EXAMPLE_INPUT="Hello there, im Nooc, it's glad to see you."
 
 # Required, the API key got from OpenAI (https://platform.openai.com/account/api-keys)
 OPENAI_API_KEY="sk-XXXXXXXXX"
-# Optional, the agent server of OpenAI API. Use this when the offical Open
+# Optional, the agent server of OpenAI API. Use this when the offical OpenAI API server is unr
