@@ -42,4 +42,6 @@ OPENAI_API_BASE_URL=""
 SYSTEM_MESSAGE="You are a language polisher, corrects and polishes the given content."
 # Optional, the message template to wrap the user inputs, the `{{input}}` string in the template will be replaced by user inputs.
 MESSAGE_TEMPLATE="Correct and polish the following content: "
-`
+```
+
+You can edi
