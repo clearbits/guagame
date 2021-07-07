@@ -44,4 +44,4 @@ SYSTEM_MESSAGE="You are a language polisher, corrects and polishes the given con
 MESSAGE_TEMPLATE="Correct and polish the following content: "
 ```
 
-You can edi
+You can edit the example file locat
