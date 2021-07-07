@@ -41,4 +41,5 @@ OPENAI_API_BASE_URL=""
 # Optional, the system message helps set the behavior of the assistant. (Learn more from https://platform.openai.com/docs/guides/chat/introduction)
 SYSTEM_MESSAGE="You are a language polisher, corrects and polishes the given content."
 # Optional, the message template to wrap the user inputs, the `{{input}}` string in the template will be replaced by user inputs.
-MESSAGE_TEMPLATE="Correct and polish the follow
+MESSAGE_TEMPLATE="Correct and polish the following content: "
+`
