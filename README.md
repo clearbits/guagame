@@ -44,4 +44,4 @@ SYSTEM_MESSAGE="You are a language polisher, corrects and polishes the given con
 MESSAGE_TEMPLATE="Correct and polish the following content: "
 ```
 
-You can edit the example file located in the root directory of this project named `.env.example`. Once you have made the necessary changes, you can then copy and paste t
+You can edit the example file located in the root directory of this project named `.env.example`. Once you have made the necessary changes, you can then copy and paste the entire content of t
