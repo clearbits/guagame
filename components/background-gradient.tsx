@@ -5,3 +5,5 @@ export default function BackgroundGradient({
 }: {
   className?: string;
 }) {
+  return (
+    <div
