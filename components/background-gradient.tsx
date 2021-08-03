@@ -7,4 +7,4 @@ export default function BackgroundGradient({
 }) {
   return (
     <div
-      className={classNames("absolute 
+      className={classNames("absolute -z-10 animate-flu
