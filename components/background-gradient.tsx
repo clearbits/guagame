@@ -7,4 +7,4 @@ export default function BackgroundGradient({
 }) {
   return (
     <div
-      className={
+      className={classNames("absolute 
