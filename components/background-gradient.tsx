@@ -8,3 +8,6 @@ export default function BackgroundGradient({
   return (
     <div
       className={classNames("absolute -z-10 animate-fluid blur-3xl", className)}
+    />
+  );
+}
