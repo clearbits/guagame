@@ -1,1 +1,1 @@
-import { ReactNode, t
+import { ReactNode, type CSSProperties }
