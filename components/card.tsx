@@ -4,4 +4,6 @@ import classNames from "classnames";
 export default function Card({
   children,
   className,
- 
+  style,
+}: {
+  clas
