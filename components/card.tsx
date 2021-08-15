@@ -6,4 +6,5 @@ export default function Card({
   className,
   style,
 }: {
-  clas
+  className?: string;
+  child
