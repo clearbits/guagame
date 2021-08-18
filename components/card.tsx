@@ -8,4 +8,5 @@ export default function Card({
 }: {
   className?: string;
   children: ReactNode;
-  style?
+  style?: CSSProperties;
+}
