@@ -12,4 +12,5 @@ export default function Card({
 }) {
   return (
     <div
-      className={clas
+      className={classNames(
+        "isola
