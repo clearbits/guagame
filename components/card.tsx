@@ -13,4 +13,4 @@ export default function Card({
   return (
     <div
       className={classNames(
-        "isola
+        "isolate rounded-xl border
