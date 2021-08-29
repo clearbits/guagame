@@ -18,4 +18,5 @@ export default function Card({
       )}
       style={style}
     >
-      {chil
+      {children}
+    </div>
