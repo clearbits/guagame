@@ -1,2 +1,2 @@
 const client = {
-  appName: fillDefault(process.env.appName,
+  appName: fillDefault(process.env.appName, "OhMyGPT"),
