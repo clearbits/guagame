@@ -1,2 +1,2 @@
 const client = {
-  appName: fillDefault(p
+  appName: fillDefault(process.env.appName,
