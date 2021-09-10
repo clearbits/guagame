@@ -1,4 +1,4 @@
 const client = {
   appName: fillDefault(process.env.appName, "OhMyGPT"),
   appLogo: process.env.appLogo ?? undefined,
-  appThemeColor: fillDefault(process.env.a
+  appThemeColor: fillDefault(process.env.appThemeColor, "#22c55e
