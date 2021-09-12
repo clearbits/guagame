@@ -3,4 +3,4 @@ const client = {
   appLogo: process.env.appLogo ?? undefined,
   appThemeColor: fillDefault(process.env.appThemeColor, "#22c55e"),
   appSummary: fillDefault(process.env.appSummary, "Ask me any thing you want."),
-  exampleInput: process.env.exampleI
+  exampleInput: process.env.exampleInput ?? "Ask me any 
