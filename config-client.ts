@@ -8,4 +8,4 @@ const client = {
 
 export default client;
 
-function fillDe
+function fillDefault(value: string |
