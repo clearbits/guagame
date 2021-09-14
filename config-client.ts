@@ -6,4 +6,6 @@ const client = {
   exampleInput: process.env.exampleInput ?? "Ask me any thing.",
 };
 
-export default c
+export default client;
+
+function fillDe
