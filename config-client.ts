@@ -9,4 +9,4 @@ const client = {
 export default client;
 
 function fillDefault(value: string | undefined, defaultValue: string): string {
- 
+  return !value ? de
