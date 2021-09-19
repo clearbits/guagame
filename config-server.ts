@@ -1,1 +1,2 @@
-const
+const server = {
+  openAI
