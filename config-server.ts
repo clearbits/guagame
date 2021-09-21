@@ -1,2 +1,2 @@
 const server = {
-  openAI
+  openAIAPIKey: required(pr
