@@ -1,2 +1,2 @@
 const server = {
-  openAIAPIKey: required(pr
+  openAIAPIKey: required(process.env.OPENAI_API_KEY, "
