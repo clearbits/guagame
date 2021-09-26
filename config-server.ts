@@ -4,4 +4,4 @@ const server = {
     process.env.OPENAI_API_BASE_URL,
     "https://api.openai.com"
   ),
-  syste
+  systemMessage: optional(process.env
