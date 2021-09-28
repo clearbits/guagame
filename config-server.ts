@@ -5,4 +5,7 @@ const server = {
     "https://api.openai.com"
   ),
   systemMessage: optional(process.env.SYSTEM_MESSAGE),
-  messageTemplate: optional(process.env.MESSAGE_TEMPLAT
+  messageTemplate: optional(process.env.MESSAGE_TEMPLATE),
+};
+
+export defaul
