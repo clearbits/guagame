@@ -5,4 +5,4 @@ const server = {
     "https://api.openai.com"
   ),
   systemMessage: optional(process.env.SYSTEM_MESSAGE),
-  messageTemplate: optional(proces
+  messageTemplate: optional(process.env.MESSAGE_TEMPLAT
