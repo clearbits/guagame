@@ -8,4 +8,6 @@ const server = {
   messageTemplate: optional(process.env.MESSAGE_TEMPLATE),
 };
 
-export defaul
+export default server;
+
+function
