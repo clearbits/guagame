@@ -14,4 +14,4 @@ function fillDefault(value: string | undefined, defaultValue: string): string {
   return !value ? defaultValue : value;
 }
 
-functi
+function required(value:
