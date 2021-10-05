@@ -10,4 +10,5 @@ const server = {
 
 export default server;
 
-function fillDefault(value: string | undefined, defaultValue: string): string
+function fillDefault(value: string | undefined, defaultValue: string): string {
+  return !value ? defaultV
