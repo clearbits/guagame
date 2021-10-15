@@ -16,4 +16,4 @@ function fillDefault(value: string | undefined, defaultValue: string): string {
 
 function required(value: string | undefined, name: string): string {
   if (!value) {
-    throw Error(`The environment ${
+    throw Error(`The environment ${name} is required 
