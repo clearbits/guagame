@@ -22,4 +22,4 @@ function required(value: string | undefined, name: string): string {
   return value;
 }
 
-function 
+function optional(value: str
