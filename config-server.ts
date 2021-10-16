@@ -19,4 +19,7 @@ function required(value: string | undefined, name: string): string {
     throw Error(`The environment ${name} is required but not found.`);
   }
 
-  re
+  return value;
+}
+
+function 
