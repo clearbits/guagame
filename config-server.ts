@@ -22,4 +22,5 @@ function required(value: string | undefined, name: string): string {
   return value;
 }
 
-function optional(value: string | undefined): s
+function optional(value: string | undefined): string | undefined {
+  ret
