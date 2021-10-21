@@ -23,4 +23,5 @@ function required(value: string | undefined, name: string): string {
 }
 
 function optional(value: string | undefined): string | undefined {
-  return value ? value : undefine
+  return value ? value : undefined;
+}
