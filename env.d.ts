@@ -1,1 +1,2 @@
-declare glo
+declare global {
+    namespace NodeJS {
