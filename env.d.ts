@@ -1,4 +1,4 @@
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
-            // Server-side envi
+            // Server-side environment variables shoul
