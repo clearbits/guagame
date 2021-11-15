@@ -6,4 +6,5 @@ declare global {
             // for variables shared by both the client-side and server-side.
             appName: string;
             appLogo: string;
-            appThemeC
+            appThemeColor: string;
+       
