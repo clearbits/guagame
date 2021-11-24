@@ -7,4 +7,4 @@ declare global {
             appName: string;
             appLogo: string;
             appThemeColor: string;
-       
+            appSummary: string;
