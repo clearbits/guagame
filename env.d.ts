@@ -10,4 +10,4 @@ declare global {
             appSummary: string;
             exampleInput: string;
 
-        
+            OPENAI_API_
