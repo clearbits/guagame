@@ -8,4 +8,6 @@ declare global {
             appLogo: string;
             appThemeColor: string;
             appSummary: string;
-            exampleInpu
+            exampleInput: string;
+
+        
