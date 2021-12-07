@@ -11,4 +11,5 @@ declare global {
             exampleInput: string;
 
             OPENAI_API_KEY: string;
-            OPENAI_API_BASE
+            OPENAI_API_BASE_URL: string;
+       
