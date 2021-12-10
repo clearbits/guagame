@@ -12,4 +12,5 @@ declare global {
 
             OPENAI_API_KEY: string;
             OPENAI_API_BASE_URL: string;
-            SYSTEM_MESSAGE: 
+            SYSTEM_MESSAGE: string;
+      
