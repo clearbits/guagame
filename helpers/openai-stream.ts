@@ -20,3 +20,20 @@ export async function OpenAIStream(payload: object) {
 
   const res = await fetch(url.href, {
     headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${server.openAIAPIKey}`,
+    },
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
+
+  const stream = new ReadableStream({
+    async start(controller) {
+      function onParse(event: ParsedEvent | ReconnectInterval) {
+        if (event.type === "event") {
+          const data = event.data;
+
+          if (data === "[DONE]") {
+            controller.close();
+            return;
+          }
