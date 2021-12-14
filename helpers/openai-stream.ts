@@ -37,3 +37,27 @@ export async function OpenAIStream(payload: object) {
             controller.close();
             return;
           }
+          try {
+            const json = JSON.parse(data);
+            const text = json.choices[0]?.delta?.content ?? "";
+
+            if (counter < 2 && (text.match(/\n/) || []).length) {
+              return;
+            }
+            const queue = encoder.encode(text);
+            controller.enqueue(queue);
+            counter++;
+          } catch (e) {
+            controller.error(e);
+          }
+        }
+      }
+
+      const parser = createParser(onParse);
+      for await (const chunk of res.body as any) {
+        parser.feed(decoder.decode(chunk));
+      }
+    },
+  });
+
+  return stream;
