@@ -61,3 +61,4 @@ export async function OpenAIStream(payload: object) {
   });
 
   return stream;
+}
