@@ -1,3 +1,4 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  env:
+  env: {
+    // Export en
