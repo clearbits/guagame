@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   env: {
-    // Export en
+    // Export envs to browser sid
