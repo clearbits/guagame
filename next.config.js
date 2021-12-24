@@ -1,2 +1,3 @@
 /** @type {import('next').NextConfig} */
-m
+module.exports = {
+  env:
