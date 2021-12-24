@@ -1,1 +1,2 @@
-/** @type {import(
+/** @type {import('next').NextConfig} */
+m
