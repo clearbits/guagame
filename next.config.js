@@ -4,4 +4,5 @@ module.exports = {
     // Export envs to browser side
     appName: process.env.APP_NAME,
     appLogo: process.env.APP_LOGO,
-    appSummary: process.env.APP_
+    appSummary: process.env.APP_SUMMARY,
+    appThem
