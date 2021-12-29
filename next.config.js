@@ -5,4 +5,4 @@ module.exports = {
     appName: process.env.APP_NAME,
     appLogo: process.env.APP_LOGO,
     appSummary: process.env.APP_SUMMARY,
-    appThem
+    appThemeColor: process.env.A
