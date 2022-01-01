@@ -8,4 +8,5 @@ module.exports = {
     appThemeColor: process.env.APP_THEME_COLOR,
     exampleInput: process.env.EXAMPLE_INPUT,
   },
-  httpAge
+  httpAgentOptions: {
+    
