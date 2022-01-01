@@ -9,4 +9,5 @@ module.exports = {
     exampleInput: process.env.EXAMPLE_INPUT,
   },
   httpAgentOptions: {
-    
+    keepAlive: true,
+ 
