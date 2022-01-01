@@ -6,4 +6,4 @@ module.exports = {
     appLogo: process.env.APP_LOGO,
     appSummary: process.env.APP_SUMMARY,
     appThemeColor: process.env.APP_THEME_COLOR,
-    ex
+    exampleInput: process.env.EXA
