@@ -11,4 +11,5 @@ module.exports = {
   httpAgentOptions: {
     keepAlive: true,
   },
-  reactStrict
+  reactStrictMode: true,
+};
