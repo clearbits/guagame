@@ -7,4 +7,5 @@
   },
   "dependencies": {
     "classnames": "^2.3.2",
-    "eventsource-parser
+    "eventsource-parser": "^0.1.0",
+    "next
