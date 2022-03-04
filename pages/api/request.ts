@@ -5,4 +5,6 @@ import { OpenAIStream } from "../../helpers/openai-stream";
 
 export const config = {
   runtime: "edge",
-}
+};
+
+export default async
