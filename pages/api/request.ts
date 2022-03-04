@@ -3,4 +3,6 @@ import server from "../../config-server";
 import { NextRequest } from "next/server";
 import { OpenAIStream } from "../../helpers/openai-stream";
 
-export const con
+export const config = {
+  runtime: "edge",
+}
