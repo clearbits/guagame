@@ -7,4 +7,4 @@ export const config = {
   runtime: "edge",
 };
 
-export default async
+export default async function handler(re
