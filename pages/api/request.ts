@@ -10,4 +10,4 @@ export const config = {
 export default async function handler(req: NextRequest) {
   const requestBody = await req.json();
 
-  l
+  let messageContent:
