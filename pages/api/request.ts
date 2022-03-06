@@ -8,4 +8,6 @@ export const config = {
 };
 
 export default async function handler(req: NextRequest) {
-  const requestBody = a
+  const requestBody = await req.json();
+
+  l
