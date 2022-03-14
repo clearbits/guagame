@@ -10,4 +10,6 @@ export const config = {
 export default async function handler(req: NextRequest) {
   const requestBody = await req.json();
 
-  let messageContent: string = requestBod
+  let messageContent: string = requestBody.input;
+
+ 
