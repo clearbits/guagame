@@ -13,4 +13,4 @@ export default async function handler(req: NextRequest) {
   let messageContent: string = requestBody.input;
 
   if (typeof messageContent !== "string" || !messageContent) {
-    return new Response
+    return new Response(null, { status:
