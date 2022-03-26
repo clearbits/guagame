@@ -16,4 +16,4 @@ export default async function handler(req: NextRequest) {
     return new Response(null, { status: 404 });
   }
 
-  if (ser
+  if (server.messageTemplate) {
