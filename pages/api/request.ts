@@ -17,4 +17,4 @@ export default async function handler(req: NextRequest) {
   }
 
   if (server.messageTemplate) {
-    if (server.messageTem
+    if (server.messageTemplate.includes("{{input
