@@ -19,4 +19,5 @@ export default async function handler(req: NextRequest) {
   if (server.messageTemplate) {
     if (server.messageTemplate.includes("{{input}}")) {
       messageContent = server.messageTemplate.replaceAll(
-        
+        "{{input}}",
+ 
