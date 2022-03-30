@@ -21,4 +21,6 @@ export default async function handler(req: NextRequest) {
       messageContent = server.messageTemplate.replaceAll(
         "{{input}}",
         messageContent
-      )
+      );
+    } else {
+      message
