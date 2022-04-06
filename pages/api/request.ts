@@ -23,4 +23,4 @@ export default async function handler(req: NextRequest) {
         messageContent
       );
     } else {
-      message
+      messageContent = server.messag
