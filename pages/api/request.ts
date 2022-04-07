@@ -23,4 +23,8 @@ export default async function handler(req: NextRequest) {
         messageContent
       );
     } else {
-      messageContent = server.messageTemplate + "\n\n" + messageConten
+      messageContent = server.messageTemplate + "\n\n" + messageContent;
+    }
+  }
+
+  le
