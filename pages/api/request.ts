@@ -27,4 +27,6 @@ export default async function handler(req: NextRequest) {
     }
   }
 
-  let systemMessage = server.systemMessa
+  let systemMessage = server.systemMessage
+    ? {
+       
