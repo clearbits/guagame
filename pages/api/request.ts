@@ -33,4 +33,6 @@ export default async function handler(req: NextRequest) {
         content: server.systemMessage,
       }
     : undefined;
-  let userMessage =
+  let userMessage = {
+    role: "user",
+    conte
