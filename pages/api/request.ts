@@ -30,4 +30,6 @@ export default async function handler(req: NextRequest) {
   let systemMessage = server.systemMessage
     ? {
         role: "system",
-        content: server.syst
+        content: server.systemMessage,
+      }
+    : 
