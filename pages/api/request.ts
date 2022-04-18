@@ -35,4 +35,5 @@ export default async function handler(req: NextRequest) {
     : undefined;
   let userMessage = {
     role: "user",
-    conte
+    content: messageContent,
+ 
