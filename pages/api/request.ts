@@ -38,4 +38,5 @@ export default async function handler(req: NextRequest) {
     content: messageContent,
   };
 
-  const payload
+  const payload = {
+    model: "gpt-
