@@ -39,4 +39,5 @@ export default async function handler(req: NextRequest) {
   };
 
   const payload = {
-    model: "gpt-
+    model: "gpt-3.5-turbo",
+   
