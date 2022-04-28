@@ -40,4 +40,5 @@ export default async function handler(req: NextRequest) {
 
   const payload = {
     model: "gpt-3.5-turbo",
-    messages: systemMessage ? [systemMessage, userMessage] : [userMess
+    messages: systemMessage ? [systemMessage, userMessage] : [userMessage],
+    stream: true,
