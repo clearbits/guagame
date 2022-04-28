@@ -44,4 +44,4 @@ export default async function handler(req: NextRequest) {
     stream: true,
   };
 
-  const stream =
+  const stream = await OpenAI
