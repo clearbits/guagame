@@ -45,4 +45,4 @@ export default async function handler(req: NextRequest) {
   };
 
   const stream = await OpenAIStream(payload);
-  retu
+  return new Response(strea
