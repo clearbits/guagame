@@ -44,4 +44,5 @@ export default async function handler(req: NextRequest) {
     stream: true,
   };
 
-  const stream = await OpenAI
+  const stream = await OpenAIStream(payload);
+  retu
