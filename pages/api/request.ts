@@ -45,4 +45,5 @@ export default async function handler(req: NextRequest) {
   };
 
   const stream = await OpenAIStream(payload);
-  return new Response(strea
+  return new Response(stream);
+}
