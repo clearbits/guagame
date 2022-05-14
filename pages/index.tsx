@@ -76,3 +76,20 @@ const Home: NextPage = () => {
         ) : undefined}
         <h1
           className={classNames(
+            "text-3xl sm:text-6xl font-bold",
+            client.appLogo ? "mt-10" : "mt-48"
+          )}
+        >
+          <span
+            className="text-blue-600"
+            style={{
+              color: client.appThemeColor,
+            }}
+          >
+            {client.appName}
+          </span>
+        </h1>
+
+        <p className="mt-3 max-w-lg opacity-70">{client.appSummary}</p>
+
+        <Card className="p-0 overflow-hidden mt-10 w-full h-36 max-w-lg bg-blue-100/20">
