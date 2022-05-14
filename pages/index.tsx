@@ -34,3 +34,27 @@ const Home: NextPage = () => {
     });
 
     if (!response.ok) {
+      setReceiving(false);
+      return;
+    }
+
+    const data = response.body;
+
+    if (!data) {
+      return;
+    }
+
+    const reader = data.getReader();
+    const decoder = new TextDecoder();
+
+    let done = false;
+
+    while (!done) {
+      const { value, done: doneReading } = await reader.read();
+      done = doneReading;
+      const chunkValue = decoder.decode(value);
+      setResult((prev) => prev + chunkValue);
+    }
+
+    setReceiving(false);
+  }, [input]);
