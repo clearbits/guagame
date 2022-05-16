@@ -115,3 +115,17 @@ const Home: NextPage = () => {
         >
           Start
         </button>
+
+        {result !== undefined ? (
+          <Card
+            className="overflow-hidden break-words text-start w-full max-w-lg bg-blue-100/20"
+            style={{
+              minHeight: "9rem",
+            }}
+          >
+            <pre className="p-4 whitespace-pre-wrap">{result}</pre>
+          </Card>
+        ) : undefined}
+      </main>
+
+      <footer className="flex h-24 w-full items-center justify-center">
