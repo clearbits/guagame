@@ -1,2 +1,5 @@
 @tailwind base;
-@tailwind com
+@tailwind components;
+@tailwind utilities;
+
+@media
