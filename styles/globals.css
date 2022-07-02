@@ -2,4 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-
+@media (prefers-color-scheme: dark) {
