@@ -1,1 +1,2 @@
-/** @type {import('tailw
+/** @type {import('tailwindcss').Config} */
+modul
