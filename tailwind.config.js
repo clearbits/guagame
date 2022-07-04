@@ -1,2 +1,3 @@
 /** @type {import('tailwindcss').Config} */
-modul
+module.exports = {
+  conten
