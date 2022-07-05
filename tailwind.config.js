@@ -1,4 +1,4 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pag
+    './pages/**/*.{js,ts,jsx,t
