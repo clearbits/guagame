@@ -7,3 +7,5 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+       
