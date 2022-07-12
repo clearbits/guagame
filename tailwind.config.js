@@ -8,4 +8,5 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        fluid: "5s linear 0s infinite alter
+        fluid: "5s linear 0s infinite alternate fluid",
+  
