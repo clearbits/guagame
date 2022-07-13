@@ -10,4 +10,5 @@ module.exports = {
       animation: {
         fluid: "5s linear 0s infinite alternate fluid",
       },
-      keyfr
+      keyframes: {
+        fluid: {
