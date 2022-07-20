@@ -13,4 +13,5 @@ module.exports = {
       keyframes: {
         fluid: {
           "0%": {
-            transform: "rotate(0deg) scale(1,
+            transform: "rotate(0deg) scale(1, 1)",
+         
