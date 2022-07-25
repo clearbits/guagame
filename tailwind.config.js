@@ -14,4 +14,4 @@ module.exports = {
         fluid: {
           "0%": {
             transform: "rotate(0deg) scale(1, 1)",
-         
+            filter: "b
