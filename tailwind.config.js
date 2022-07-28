@@ -17,4 +17,5 @@ module.exports = {
             filter: "blur(5rem) hue-rotate(0deg)",
           },
           "50%": {
-            transform: "rotate(60deg) scale(1.5,
+            transform: "rotate(60deg) scale(1.5, 1.2)",
+       
