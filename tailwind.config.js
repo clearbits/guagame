@@ -18,4 +18,4 @@ module.exports = {
           },
           "50%": {
             transform: "rotate(60deg) scale(1.5, 1.2)",
-       
+            filter: "blue(10rem
