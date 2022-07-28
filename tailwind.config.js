@@ -20,3 +20,5 @@ module.exports = {
             transform: "rotate(60deg) scale(1.5, 1.2)",
             filter: "blue(10rem) hue-rotate(40deg)",
           },
+          "100%": {
+      
