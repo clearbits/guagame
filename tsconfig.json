@@ -1,2 +1,4 @@
 {
-  "compilerOpti
+  "compilerOptions": {
+    "target": "es5",
+  
