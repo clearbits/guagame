@@ -23,3 +23,5 @@ module.exports = {
           "100%": {
             transform: "rotate(90deg) scale(1, 1.5)",
             filter: "blur(8rem) hue-rotate(-30deg)",
+          },
+     
