@@ -1,4 +1,4 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "do
+    "lib": ["dom", "dom.iterable", "esnex
