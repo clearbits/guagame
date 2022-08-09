@@ -5,4 +5,5 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNa
+    "forceConsistentCasingInFileNames": true,
+    "noE
