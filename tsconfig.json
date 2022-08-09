@@ -6,4 +6,5 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noE
+    "noEmit": true,
+    "es
