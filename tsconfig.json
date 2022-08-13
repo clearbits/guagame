@@ -12,4 +12,5 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx"
+    "jsx": "preserve",
+    "increm
