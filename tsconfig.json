@@ -13,4 +13,5 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "increm
+    "incremental": true
+ 
