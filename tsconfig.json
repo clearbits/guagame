@@ -15,4 +15,4 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-e
+  "include": ["next-env.d.ts", "**/*.ts", "
