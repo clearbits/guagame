@@ -1345,3 +1345,22 @@ __metadata:
   resolution: "p-map@npm:4.0.0"
   dependencies:
     aggregate-error: ^3.0.0
+  checksum: cb0ab21ec0f32ddffd31dfc250e3afa61e103ef43d957cc45497afe37513634589316de4eb88abdfd969fe6410c22c0b93ab24328833b8eb1ccc087fc0442a1c
+  languageName: node
+  linkType: hard
+
+"path-is-absolute@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "path-is-absolute@npm:1.0.1"
+  checksum: 060840f92cf8effa293bcc1bea81281bd7d363731d214cbe5c227df207c34cd727430f70c6037b5159c8a870b9157cba65e775446b0ab06fd5ecc7e54615a3b8
+  languageName: node
+  linkType: hard
+
+"path-parse@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "path-parse@npm:1.0.7"
+  checksum: 49abf3d81115642938a8700ec580da6e830dde670be21893c62f4e10bd7dd4c3742ddc603fe24f898cba7eb0c6bc1777f8d9ac14185d34540c6d4d80cd9cae8a
+  languageName: node
+  linkType: hard
+
+"picocolors@npm:^1.0.0":
